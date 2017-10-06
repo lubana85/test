@@ -6,6 +6,8 @@
 <script>
   function validateForm() {
     var csv = document.forms["myForm"]["csv"].value;
+    // read CSV file content and save it to Tree
+    
      
      
 } 
@@ -19,17 +21,22 @@
 <form name="myForm">
   <table>
   <tr>
-    CSV File:<input type="file" id="csv" onchange="" ng-model="csv" required/>
+    
+    <td align="left">CSV File:</td>
+    <td align="left"><input type="file" id="csv" onchange="" ng-model="csv" required/>
     <div id="csvError" ng-show="myForm.csv.$invalid">required</div>
+    </td>
+    
   </tr>
   <tr>
-    Device from: <input type="text" name="from" ng-model="from" required>
-    <div id="fromError" ng-show="myForm.from.$invalid">required</div>
+    <td align="left">Device from: </td>
+    <td align="left"><input type="text" name="from" ng-model="from" required>
+      <div id="fromError" ng-show="myForm.from.$invalid">required</div></td>
   </tr>
-    <tr><td>Device to: </td><td><input type="text" name="to"></td></tr>
-    <tr><td>Time: </td><td><input type="text" name="time"></td></tr>
+    <tr><td align="left">Device to: </td><td align="left"><input type="text" name="to"></td></tr>
+    <tr><td align="left">Time: </td><td align="left"><input type="text" name="time"></td></tr>
   
-  <tr><td colspan="2"><input type="button" onclick="validateForm()" value="ok" /></td></tr>
+  <tr><td align="left" colspan="2"><input type="button" onclick="validateForm()" value="ok" /></td></tr>
   
   </table>
   
