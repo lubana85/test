@@ -1,29 +1,32 @@
 
 
 <html>
-<body>
-  
- <script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
+<script>
   function validateForm() {
     var csv = document.forms["myForm"]["csv"].value;
-    alert(csv);
-    if (csv == "") {
-        alert("Name must be filled out");
-        return false;
-    }
+     
+     
 } 
   </script>
+  
+<body  ng-app="">  
+ 
 
-<h1>Enter the following information please:</h1>
+<h3>Enter the following information please:</h3>
 
 <form name="myForm">
   
-  CSV File:<input type="file" id="csv" onchange="" />
-  Device from: <input type="text" name="from">
-  Device to: <input type="text" name="to">
-  Time: <input type="text" name="time">
+  <p>
+    CSV File:<input type="file" id="csv" onchange="" ng-model="csv" required/>
+    <div id="csvError" ng-show="myForm.csv.$invalid"></div>
+  </p>
+  <p>Device from: <input type="text" name="from" ng-model="from" required></p>
+  <p>Device to: <input type="text" name="to"></p>
+  <p>Time: <input type="text" name="time"></p>
   
-  <input type="button" onclick="validateForm()" value="ok" />
+  <p><input type="button" onclick="validateForm()" value="ok" /></p>
   
 </form>
 </body>
