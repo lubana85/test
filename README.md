@@ -1,4 +1,9 @@
 
+
+<!DOCTYPE html>
+<html>
+<body>
+  
 <h1>hello world</h1>
 
 <?php
@@ -6,3 +11,6 @@
 echo "test";
 
 ?>
+
+</body>
+</html>
