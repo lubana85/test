@@ -17,16 +17,21 @@
 <h3>Enter the following information please:</h3>
 
 <form name="myForm">
-  
-  <p>
+  <table>
+  <tr>
     CSV File:<input type="file" id="csv" onchange="" ng-model="csv" required/>
-    <div id="csvError" ng-show="myForm.csv.$invalid"></div>
-  </p>
-  <p>Device from: <input type="text" name="from" ng-model="from" required></p>
-  <p>Device to: <input type="text" name="to"></p>
-  <p>Time: <input type="text" name="time"></p>
+    <div id="csvError" ng-show="myForm.csv.$invalid">required</div>
+  </tr>
+  <tr>
+    Device from: <input type="text" name="from" ng-model="from" required>
+    <div id="fromError" ng-show="myForm.from.$invalid">required</div>
+  </tr>
+    <tr><td>Device to: </td><td><input type="text" name="to"></td></tr>
+    <tr><td>Time: </td><td><input type="text" name="time"></td></tr>
   
-  <p><input type="button" onclick="validateForm()" value="ok" /></p>
+  <tr><td colspan="2"><input type="button" onclick="validateForm()" value="ok" /></td></tr>
+  
+  </table>
   
 </form>
 </body>
