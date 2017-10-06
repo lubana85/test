@@ -1,16 +1,17 @@
 
 
-<!DOCTYPE html>
 <html>
 <body>
   
-<h1>hello world</h1>
+
 
 <?php
 
 echo "test";
 
 ?>
+
+<h1>hello world!</h1>
 
 </body>
 </html>
