@@ -4,9 +4,9 @@
 function readCSV(fileName)
 {
 	
-	alert("innnnn");
+	var fileUpload = document.getElementById("fileUpload");
 	var reader = new FileReader();
-	reader.readAsText(fileName);
+	reader.readAsText(fileUpload.files[0]);
 	
 	reader.onload = function (e) {
 		alert("load");
