@@ -11,6 +11,11 @@ function readCSV(fileName)
 	reader.onload = function (e) {
 		alert("load");
 	}
+	
+	reader.onerror = function (e){
+		alert("error");
+		
+	}
 	/*
 	if (window.FileReader) {
 		
