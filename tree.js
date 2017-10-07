@@ -6,6 +6,8 @@ function readCSV(fileName)
 	
 	alert("innnnn");
 	var reader = new FileReader();
+	reader.readAsText(fileName);
+	
 	reader.onload = function (e) {
 		alert("load");
 	}
@@ -37,6 +39,6 @@ function readCSV(fileName)
 		alert("The browser doesn't support file reader");
 	}
 	*/
-	reader.readAsText(fileName);
+	
 	
 }
