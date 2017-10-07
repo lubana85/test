@@ -1,5 +1,16 @@
 
+
+
 function readCSV(fileName)
 {
-	alert(fileName);
+	var reader = new FileReader();
+	reader.onload = function (e) {
+	
+		var rows = e.target.result.split("\n");
+
+		for (var i = 0; i < rows.length; i++) {
+			console.log( rows[i].split(","));
+		}
+	}
+	
 }
