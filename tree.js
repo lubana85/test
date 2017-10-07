@@ -25,9 +25,13 @@ function readCSV()
 			var devices = rows[i].split(",");
 			var x = devices[0];
 			var y = devices[1];
-			tree[x][y] = devices[2];
+			var t = devices[2];
+			//tree[x][y] = devices[2];
 			
-			alert(tree[x][y]);
+			//alert(tree[x][y]);
+			alert(x);
+			alert(y);
+			alert(t);
 			
 			// -------------------------------
 			
