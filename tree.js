@@ -38,6 +38,7 @@ function readCSV()
 			
 			
 		}
+		return graph;
 	}
 	
 	reader.onerror = function (e){
