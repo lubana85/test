@@ -4,7 +4,7 @@
 function readCSV(fileName)
 {
 	
-	var fileUpload = document.getElementById("fileUpload");
+	var fileUpload = document.getElementById("csv");
 	var reader = new FileReader();
 	reader.readAsText(fileUpload.files[0]);
 	
