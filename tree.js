@@ -3,7 +3,7 @@
 
 function readCSV(fileName)
 {
-	 
+	if (window.FileReader) {
 	var reader = new FileReader();
 	reader.onload = function (e) {
 	
@@ -16,6 +16,11 @@ function readCSV(fileName)
 		}
 	}
 	reader.readAsText(fileName);
+	}
+	else
+	{
+		alert("noo");
+	}
 
 	
 }
