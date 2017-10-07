@@ -1,5 +1,6 @@
 
 
+<script type="text/javascript" src="tree.js"></script>
 
 function readCSV()
 {
