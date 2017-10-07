@@ -10,7 +10,10 @@ function findPath(X,Y,T)
 		if (tree[X][Y]>0)
 			console.log(X+"-->");
 		else
-			findPath(X,Y,T);
+		{
+			//findPath(X,Y,T);
+			alert("");
+		}
 
 	}
 
