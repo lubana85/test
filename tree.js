@@ -12,6 +12,6 @@ function readCSV(fileName)
 			alert( rows[i].split(","));
 		}
 	}
-	reader.readAsText(fileUpload.files[0]);
+	reader.readAsText(fileName);
 	
 }
