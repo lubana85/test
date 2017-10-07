@@ -4,7 +4,8 @@
 function readCSV(fileName)
 {
 	if (window.FileReader) {
-	var reader = new FileReader();
+		alert("yes");
+	/*var reader = new FileReader();
 	reader.onload = function (e) {
 	
 		var text = e.target.result; alert(text);
@@ -15,7 +16,7 @@ function readCSV(fileName)
 			alert( rows[i].split(","));
 		}
 	}
-	reader.readAsText(fileName);
+	reader.readAsText(fileName);*/
 	}
 	else
 	{
