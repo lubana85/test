@@ -1,7 +1,7 @@
 
 
 
-function readCSV(fileName)
+function readCSV()
 {
 	
 	var fileUpload = document.getElementById("csv");
@@ -9,26 +9,6 @@ function readCSV(fileName)
 	reader.readAsText(fileUpload.files[0]);
 	
 	reader.onload = function (e) {
-		alert("load");
-	}
-	
-	reader.onerror = function (e){
-		alert("error");
-		
-	}
-	/*
-	if (window.FileReader) {
-		
-	
-		
-		
-		
-		alert(e.target.error.name );
-		
-	if(e.target.error.name == "NotReadableError") {
-		alert("Canno't read file !");
-	}
-		
 		var text = e.target.result; alert(text);
 		var rows = text.split("\n");
 		
@@ -36,6 +16,19 @@ function readCSV(fileName)
 		for (var i = 0; i < rows.length; i++) {
 			alert( rows[i].split(","));
 		}
+	}
+	
+	reader.onerror = function (e){
+		if(e.target.error.name == "NotReadableError") {
+			alert("Canno't read file !");
+		}
+		
+	}
+	/*
+	if (window.FileReader) {
+		
+		
+		
 	
 	
 	}
