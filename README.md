@@ -4,11 +4,20 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
   <script type="text/javascript" src="tree.js"></script>
+  <script type="text/javascript" src="findPath.js"></script>
+  
 <script>
   function validateForm() {
     var csv = document.forms["myForm"]["csv"].value;
     // read CSV file content and save it to Tree
-    readCSV(csv);    
+    readCSV(); 
+  
+  var x = document.forms["myForm"]["from"].value;
+  var y = document.forms["myForm"]["to"].value;
+  var t = document.forms["myForm"]["time"].value;
+  
+  findPath(x,y,t);
+  
      
   } 
   </script>
