@@ -2,11 +2,13 @@
 
 
 function readCSV(fileName)
-{
+{alert("in");
 	if (window.FileReader) {
 		
 	var reader = new FileReader();
 	reader.readAsText(fileName);
+		
+		alert(e.target.error.name );
 		
 	if(e.target.error.name == "NotReadableError") {
 		alert("Canno't read file !");
