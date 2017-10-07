@@ -28,7 +28,7 @@
 <h3>Enter the following information please:</h3>
 
 <form name="myForm">
-  <table>
+  <table align="left">
   <tr>
     
     <td align="left">CSV File:</td>
