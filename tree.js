@@ -1,11 +1,11 @@
 
-//<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
 
 function readCSV(fileName)
 {
 	if (window.FileReader) {
-		alert("yes");
-	/*var reader = new FileReader();
+		
+	var reader = new FileReader();
 	reader.onload = function (e) {
 	
 		var text = e.target.result; alert(text);
@@ -16,7 +16,7 @@ function readCSV(fileName)
 			alert( rows[i].split(","));
 		}
 	}
-	reader.readAsText(fileName);*/
+	reader.readAsText(fileName);
 	}
 	else
 	{
