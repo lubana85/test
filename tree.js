@@ -7,6 +7,11 @@ function readCSV(fileName)
 		
 	var reader = new FileReader();
 	reader.readAsText(fileName);
+		
+	if(e.target.error.name == "NotReadableError") {
+		alert("Canno't read file !");
+	}
+		
 	reader.onload = function (e) {	
 		
 		var text = e.target.result; alert(text);
