@@ -3,6 +3,7 @@
 
 function readCSV(fileName)
 {
+	alert(fileName);
 	var reader = new FileReader();
 	reader.onload = function (e) {
 	
