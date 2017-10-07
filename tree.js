@@ -2,19 +2,25 @@
 
 
 function readCSV(fileName)
-{alert("in");
+{
+	
+	alert("innnnn");
+	var reader = new FileReader();
+	reader.onload = function (e) {
+		alert("load");
+	}
+	/*
 	if (window.FileReader) {
 		
-	var reader = new FileReader();
-	reader.readAsText(fileName);
+	
+		
+		
 		
 		alert(e.target.error.name );
 		
 	if(e.target.error.name == "NotReadableError") {
 		alert("Canno't read file !");
 	}
-		
-	reader.onload = function (e) {	
 		
 		var text = e.target.result; alert(text);
 		var rows = text.split("\n");
@@ -23,13 +29,14 @@ function readCSV(fileName)
 		for (var i = 0; i < rows.length; i++) {
 			alert( rows[i].split(","));
 		}
-	}
+	
 	
 	}
 	else
 	{
 		alert("The browser doesn't support file reader");
 	}
-
+	*/
+	reader.readAsText(fileName);
 	
 }
