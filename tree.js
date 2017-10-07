@@ -4,7 +4,7 @@
 function readCSV()
 {
 	
-	var graph;
+	var graph = new Graph();
 	
 	var fileUpload = document.getElementById("csv");
 	var reader = new FileReader();
@@ -26,13 +26,12 @@ function readCSV()
 			var x = devices[0];
 			var y = devices[1];
 			var t = devices[2];
-			//tree[x][y] = devices[2];
-			//var node = new Node(x,y,t);
 			
+			if (x!=""){
+				var node = new Node(x,y,t);
+				graph.addConnection(node);
+			}
 			
-			alert(x);
-			alert(y);
-			alert(t);
 			
 			// -------------------------------
 			
